@@ -1,0 +1,171 @@
+@import 'variables';
+@import 'mixin';
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+    font-family:$fonts;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: $pryBackground;
+    padding: 10px;
+}
+
+.todo-app{
+    width: 100%;
+    max-width: 540px;
+    background: white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    @include border-radius (10px);
+    text-transform: capitalize;
+
+    // .todo-header::before{
+    //     content: '';
+    //     position: absolute;
+    //     height: 30px;
+    //     width: 30px;
+    //     background-image: url(/images/p-unlocked.png);
+    //     background-size: cover;
+    //     left: 400px;
+    //     cursor: pointer;
+    //     &::before{
+    //         background-image: url(/images/p-locked.png);
+    //         background-size: cover;
+    //         left: 400px;
+    //     }
+    // }
+
+    
+
+    .todo-header{
+        color: #002765;
+        @include flex-center();
+        margin-bottom: 20px;
+    }
+    img{
+        width: 20px;
+        padding-left: 1rem;
+    }
+    .row{
+        @include flex-center();
+        justify-content: space-between;
+        background: #edeef0;
+        @include border-radius(30px);
+        padding-left: 20px;
+        margin-bottom: 25px;
+    }
+    input{
+        flex: 1;
+        @include btn();
+        background: transparent;
+        padding: 10px;
+        font-weight: 14px;
+    }
+    .add-btn{
+    @include btn();
+    padding: 16px 50px;
+    background: $btn;
+    color: white;
+    font-size: 16px;
+    @include border-radius(40px);
+    &:hover{
+        background: darken($btn, 10%);
+    }
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 0;
+    }
+    li{
+        margin-bottom: 10px;
+    }
+    ul li{
+        text-transform: none;
+        list-style: none;
+        font-size: 14px;
+        font-weight: 700;
+        padding: 12px 8px 12px 50px;
+        user-select: none;
+        cursor: pointer;
+        position: relative;
+        border: 0.5px solid lightgray;
+        @include border-radius(50px);
+        color: $black;
+        background: white;
+
+        &::before{
+            content: '';
+            cursor: pointer;
+            position: absolute;
+            height: 14px;
+            width: 14px;
+            @include border-radius(50%);
+            border: 1px solid grey;
+            top: 15px;
+            left: 0px;
+            margin-left: 10px;
+        }
+        span{
+            color:$black;    
+            position: absolute;
+            right: 10px;
+            top: 7px;
+            width: 30px;
+            height: 30px;
+            font-size: 15px;
+            line-height: 30px;
+            text-align: center;
+            @include border-radius(50%);
+            &:hover{
+                background: $btn;
+                transition:  $transition;
+            }
+           
+        }
+        &:hover{
+            background-color: lightyellow;
+        }
+    }
+    .checked{
+        text-decoration: line-through;
+        color: #bfbfbf;
+        border: hidden;
+        background: $pryBackground;
+
+        &::before{
+            background: lightgreen;
+            border: 1px solid lightgreen;
+        }
+        span{
+            color: white;
+        }
+    } 
+}
+
+footer{
+    background: $color-purple;
+    text-align: center;
+    color: set-text-color($color-blue);
+    text-transform: capitalize;
+    font-size: 10px;
+    word-spacing: 5px;
+    a{
+        color: set-text-color($color-purple);
+        text-decoration: none;
+        &:hover{
+            background-color: darken($color-purple, 10%);
+            transition: 0.3s;
+        }
+    }
+   &:hover{
+    color: aqua;
+   }
+}
