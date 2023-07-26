@@ -1,11 +1,3 @@
-# TO-DO List 
-
-
-
-
-
-
-
 # TO-DO LIST APP 
 
 ## Table of contents
@@ -14,18 +6,16 @@
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
   - [Links](#links)
-- [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 
 ### Overview
 
 A to-do list. It is not responsive yet! 
+
 
 ### The challenge
 
@@ -35,13 +25,13 @@ A to-do list. It is not responsive yet!
 
 ### Screenshot
 
-![desktop view](./images/Recording%202023-07-26%20095909.mp4)
+![desktop view](./images/todo%20app.jpg)
 
 
 
 ### Links
 
-- Solution URL: [Github]()
+- Solution URL: [Github](https://github.com/Aanu-TT/js.git)
 - Live Site URL: [Live]()
 
 
@@ -53,14 +43,14 @@ A to-do list. It is not responsive yet!
 
 
 
-### Future improvements
+### Continued development
 
 
 - I will be adding a refresh button; 
 - A privacy and a password-able button to the code
   reminder btn & create a scale of preference
 
-### Acknowledgement
+### Useful resources
 
 Here's to the awesome resources that made this project possible
 
