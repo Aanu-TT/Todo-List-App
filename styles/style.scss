@@ -7,14 +7,13 @@ body{
     font-family:$fonts;
     width: 100vw;
     height: 100vh;
-}
-
-.container{
-    width: 100%;
-    min-height: 100vh;
     background: $pryBackground;
     padding: 10px;
+    @include media-flex-center();
+    justify-content: space-between;
+
 }
+
 
 .todo-app{
     width: 100%;
@@ -157,6 +156,10 @@ footer{
     text-transform: capitalize;
     font-size: 10px;
     word-spacing: 5px;
+    position: relative;
+    bottom: -10px;
+    left: -15px;
+
     a{
         color: set-text-color($color-purple);
         text-decoration: none;
@@ -169,3 +172,16 @@ footer{
     color: aqua;
    }
 }
+
+
+// @media (min-width: $layout-breakpoint-small) {
+
+//     body{
+//         @include media-flex-center();
+
+//     }    
+//     .todo-app {
+//         width: 80%;
+//         max-width: 320px;
+//     }
+// }

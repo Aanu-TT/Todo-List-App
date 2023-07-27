@@ -32,7 +32,7 @@ A to-do list. It is not responsive yet!
 ### Links
 
 - Solution URL: [Github](https://github.com/Aanu-TT/js.git)
-- Live Site URL: [Live]()
+- Live Site URL: [Live](https://todo-list-app-eight-pink.vercel.app/)
 
 
 ### Built with

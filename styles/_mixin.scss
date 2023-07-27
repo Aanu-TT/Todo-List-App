@@ -17,3 +17,11 @@
     align-items: center;
     justify-content: center;
 }
+
+
+
+@mixin media-flex-center(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
