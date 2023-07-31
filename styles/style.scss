@@ -49,6 +49,7 @@ body{
     }
     img{
         width: 20px;
+        height: auto;
         padding-left: 1rem;
     }
     .row{
@@ -70,11 +71,12 @@ body{
     @include btn();
     padding: 16px 50px;
     background: $btn;
-    color: white;
+    color: darkblue;
+    font-weight: bolder;
     font-size: 16px;
     @include border-radius(40px);
     &:hover{
-        background: darken($btn, 10%);
+        background: darken($btn, 20%);
     }
     }
     ul{
@@ -179,6 +181,7 @@ footer{
 //     body{
 //         @include media-flex-center();
 
+// add a '+' sign in stead of the 'add'
 //     }    
 //     .todo-app {
 //         width: 80%;

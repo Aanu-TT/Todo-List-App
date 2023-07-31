@@ -32,6 +32,7 @@ body {
 }
 .todo-app img {
   width: 20px;
+  height: auto;
   padding-left: 1rem;
 }
 .todo-app .row {
@@ -64,15 +65,16 @@ body {
   text-transform: capitalize;
   transition: 0.3s;
   padding: 16px 50px;
-  background: #ff5945;
-  color: white;
+  background: #FF9285;
+  color: darkblue;
+  font-weight: bolder;
   font-size: 16px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-radius: 40px;
 }
 .todo-app .add-btn:hover {
-  background: #ff2b12;
+  background: #ff371f;
 }
 .todo-app ul {
   display: flex;
@@ -128,7 +130,7 @@ body {
   border-radius: 50%;
 }
 .todo-app ul li span:hover {
-  background: #ff5945;
+  background: #FF9285;
   transition: 0.3s;
 }
 .todo-app ul li:hover {
