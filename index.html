@@ -26,10 +26,13 @@
         </button>
         <img src="https://img.icons8.com/?size=2x&id=FbRY9JkBrjiX&format=png" alt="privacy-on"> 
         <button class="refresh-btn" onclick="refresh">&#10227;</button> -->
-        <h2 class="todo-header">to-do list <img src="images/check-sign.png" alt="image of a check-sign"></h2>
+        <h2 class="todo-header">to-do list <img src="images/check-sign.png" alt="check-sign"></h2>
         <div class="row">
-            <input type="text" id="input-box" placeholder="Add your text">
-            <button class="add-btn" onclick="addTask()">add</button>
+            <input type="text" id="input-box" placeholder="i will be...">
+            <button class="add-btn" onclick="addTask()">
+                <div class="add">add</div>
+                <div class="add-sign">+</div>
+            </button>
         </div>
         <ul id="list-container">
             <!-- <li class="checked">task</li> -->

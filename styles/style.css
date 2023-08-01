@@ -2,8 +2,8 @@ body {
   margin: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: linear-gradient(135deg, #153677, #4e085f);
   padding: 10px;
   display: flex;
@@ -13,7 +13,6 @@ body {
 }
 
 .todo-app {
-  width: 100%;
   max-width: 540px;
   background: white;
   margin: 100px auto 20px;
@@ -31,8 +30,8 @@ body {
   margin-bottom: 20px;
 }
 .todo-app img {
-  width: 20px;
-  height: auto;
+  width: 4%;
+  height: 4%;
   padding-left: 1rem;
 }
 .todo-app .row {
@@ -64,7 +63,8 @@ body {
   cursor: pointer;
   text-transform: capitalize;
   transition: 0.3s;
-  padding: 16px 50px;
+  width: 130px;
+  height: 50px;
   background: #FF9285;
   color: darkblue;
   font-weight: bolder;
@@ -72,6 +72,9 @@ body {
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   border-radius: 40px;
+}
+.todo-app .add-btn .add-sign {
+  display: none;
 }
 .todo-app .add-btn:hover {
   background: #ff371f;
@@ -171,4 +174,23 @@ footer a:hover {
 }
 footer:hover {
   color: aqua;
+}
+
+@media (max-width: 700px) {
+  .todo-app {
+    max-width: 300px;
+  }
+  .todo-app .add-btn {
+    width: 40px;
+    height: 40px;
+  }
+  .todo-app .add-btn .add {
+    display: none;
+  }
+  .todo-app .add-btn .add-sign {
+    display: block;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+  }
 }
